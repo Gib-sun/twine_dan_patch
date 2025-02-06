@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play The Dan Patch Line.</tw-noscript></noscript></tw-story>
-<tw-storydata name="The Dan Patch Line" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="547BD0AB-BAF6-44FC-A4C9-E6BE2CA9BCA1" options="" tags="" zoom="0.3" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("https://use.typekit.net/lxf8fwd.css");
+<tw-storydata name="The Dan Patch Line" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="547BD0AB-BAF6-44FC-A4C9-E6BE2CA9BCA1" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url("https://use.typekit.net/lxf8fwd.css");
 
 tw-story{
   font-family: "de-walpergens-pica", sans-serif;
@@ -63,9 +63,9 @@ tw-icon[alt="Undo"], tw-icon[alt="Redo"] {
 
 [[Close your email.]]]</tw-passagedata><tw-passagedata pid="3" name="Close your email." tags="" position="600,200" size="100,100">(align:&quot;=&gt;&lt;=&quot;)+(box:&quot;===XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX==&quot;)[You forgot you even applied to this place...
 
-[[First day of work-&gt;First day of work.]]]</tw-passagedata><tw-passagedata pid="4" name="First day of work." tags="" position="925,200" size="100,100">&quot;So glad you&#39;re finally here and you found the way to my office buliding. I know it&#39;s especially hard to get past the people acting like dogs when you come in the entrence. They belong to the landlord and have been here as long as I remember. I choose not to ask questions and neither shourd you. ANYWAYYY...
+[[First day of work-&gt;First day of work.]]]</tw-passagedata><tw-passagedata pid="4" name="First day of work." tags="" position="925,200" size="100,100">&quot;So glad you&#39;re finally here and you found the way to my office buliding. I know it&#39;s especially hard to get past the people acting like dogs when you come in the entrance. They showed up this morning. I choose not to ask questions and neither shoud you. ANYWAYYY...
 
-As the rebuild begins on the new train line in Minnesota, a new life unfolds before us. This great choices of passenger rail logistics and planning have been left up to me. 
+As the rebuild begins on the new train line in Minnesota, a new life unfolds before us. These great choices of passenger rail logistics and planning have been left up to me. 
 
 I, of course, have choosen to hire you, my intern, to help me with this process (text-style:&quot;strike&quot;,&quot;blur&quot;,&quot;fidget&quot;)[and to unload all my work on to you]. 
 
@@ -131,7 +131,10 @@ You step outside the office. Where do you go now?
 [[Check out the neighbors next door.]]
 
  (link-reveal:&quot;&#39;&#39;Head down to the basement.&#39;&#39;&quot;)[ There is no light switch at the top of the stairs, so it must be at the bottom. You&#39;ll have to go down in the dark. (text-style:&quot;blurrier&quot;)[An ideal place for summoning spirits.] [[Head down anyway?]]]]
- </tw-passagedata><tw-passagedata pid="12" name="call sponsers to host a passenger-rail gala to fundraise for the train." tags="" position="1500,900" size="100,100">(set: $sponsers to true)
+ 
+ (if: $summoning is true)[ [[Check back in.-&gt;check back in]]]
+ 
+ Decide you want to do [[something else-&gt;some tasks]].</tw-passagedata><tw-passagedata pid="12" name="call sponsers to host a passenger-rail gala to fundraise for the train." tags="" position="1500,900" size="100,100">(set: $sponsers to true)
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[You call countless amounts of state and local companies to get interested stakeholders to attend a gala! But one thing people with lots of money love doing? 
 Spending money of course! 
 
@@ -143,7 +146,9 @@ The gala is a great success! You even earned money since someone mistook you for
 You find the candles and matches. 
 Perfect! Just what I need.
 
-(if: $medium is true)[With the help of your new neighbor who offered her medium services to help summon the horse you start lighting the candles you found. (text-style:&quot;sway&quot;)[[[Start the summoning.-&gt;Summoning]]]](else:)[You&#39;ve never tried to communicate with the dead before, and you&#39;re starting to think you may some help. 
+(if: $medium is true)[With the help of your new neighbor who offered her medium services to help summon the horse you start lighting the candles you found. (text-style:&quot;sway&quot;)[[[Start the summoning.-&gt;Summoning]]
+
+^^(Turrn Volume Up.)^^]](else:)[You&#39;ve never tried to communicate with the dead before, and you&#39;re starting to think you may some help. 
 You see something out the corner of your eye as you ponder. 
 (after:12s)[IT&#39;S PALE GREEN PANTS WITH NOBODY INSIDE THEM!!(set:$palegreenpants to true)]
 
@@ -200,7 +205,7 @@ but you complete all of the Minnesota&#39;s Department of Transportation&#39;s y
 
 
 Music Credits:
-In taberna quando sumus by MIT Concert Choir is licensed under a Attribution-Noncommercial 3.0 United States License. [[Access Link | https://freemusicarchive.org/music/MIT_Concert_Choir/Carmina_Burana_Carl_Orff/14_1070/]]
+In taberna quando sumus by MIT Concert Choir is licensed under a Attribution-Noncommercial 3.0 United States License. &lt;a href=&quot;https://freemusicarchive.org/music/MIT_Concert_Choir/Carmina_Burana_Carl_Orff/14_1070/&quot;&gt;Access Link&lt;/a&gt;
 
 </tw-passagedata><tw-passagedata pid="19" name="hal.tracks" tags="" position="100,300" size="100,100">choirmusic: choirmusic.mp3 </tw-passagedata><tw-passagedata pid="20" name="Summoning" tags="" position="800,1100" size="100,100">{
 (track: &#39;choirmusic&#39;, &#39;loop&#39;, true)
@@ -219,7 +224,7 @@ As the last candle is lit, you look towards your neighbor for guidance but she h
 
 This does not make you any less confused.
 
-&quot;You see they&#39;re part of an acting group. They&#39;re getting over their stage frieght by doing improv bits in semi-public areas. They&#39;ve really been into the dog thing lately though last night it was cats... anyway they have a show next week. You shoud come see them with the other neighbor down the hall and I.&quot;
+&quot;You see they&#39;re part of an acting group. They&#39;re getting over their stage fright by doing improv bits in semi-public areas. They&#39;ve really been into the dog thing lately though last night it was cats... anyway they have a show next week. You shoud come see them with the other neighbor down the hall and I.&quot;
 
 (align:&quot;=&gt;&lt;=&quot;)+(box:&quot;X&quot;)[ [[Take the &#39;Guys &#39;n Dolls&#39; ticket.-&gt;investigate what the rest of the building has to offer.]]
 [[Decline the ticket.-&gt;investigate what the rest of the building has to offer.]]]</tw-passagedata><tw-passagedata pid="23" name="Turn around." tags="" position="800,1300" size="100,100">(enchant:?page,(text-colour:(hsl:0,0.8039,0.5,0.3))+(bg:black))
@@ -252,11 +257,11 @@ You do not have $5
 (set: $palegreenpants to false)
 (set: $sponsers to false)
 (set: $taxes to false)
-(set: $medium to false)</tw-passagedata><tw-passagedata pid="26" name=" https://freemusicarchive.org/music/MIT_Concert_Choir/Carmina_Burana_Carl_Orff/14_1070/" tags="" position="1800,100" size="100,100"></tw-passagedata><tw-passagedata pid="27" name="&quot;I&#39;m actually just exploring the building, I work accross the hall.&quot;" tags="" position="400,1300" size="100,100">&quot;Oh well I do tarot readings...&quot; she tell you.
+(set: $medium to false)</tw-passagedata><tw-passagedata pid="26" name="&quot;I&#39;m actually just exploring the building, I work accross the hall.&quot;" tags="" position="400,1300" size="100,100">&quot;Oh well I do tarot readings...&quot; she tell you.
 
 &quot;Cool, cool.&quot;
 
-[[Leave. This is getting awkward. -&gt;investigate what the rest of the building has to offer.]]</tw-passagedata><tw-passagedata pid="28" name="&quot;I need a favor.&quot;" tags="" position="600,1300" size="100,100">(set: $medium to true)
+[[Leave. This is getting awkward. -&gt;investigate what the rest of the building has to offer.]]</tw-passagedata><tw-passagedata pid="27" name="&quot;I need a favor.&quot;" tags="" position="600,1300" size="100,100">(set: $medium to true)
 She seems intrested. It seems she doesn&#39;t get many visitors.
 
 
